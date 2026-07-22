@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "status": "DEMONSTRATION",
+    "note": "Example campaign created only to validate the template system. No real airline policy, deadline, or amount has been confirmed — every factual field uses the [VERIFY SOURCE AND DATE] placeholder, per content/source-and-date-rules.md.",
+    "campaignId": "lost-luggage-demo",
+    "language": "en",
+    "pillar": "us-life",
+    "visualFamily": "field-notes",
+    "campaignTitle": "The beautiful trip that goes wrong before you even board",
+    "theme": "Lost luggage as an educational context",
+    "credit": "Let's Go With Francis — Field Notes",
+    "dateChecked": "[VERIFY SOURCE AND DATE]",
+    "source": "[VERIFY SOURCE AND DATE]"
+  },
+  "slides": [
+    {
+      "index": 1,
+      "type": "hook",
+      "template": "carousel-cover",
+      "headline": "The most beautiful trip of my life almost started with no suitcase.",
+      "subhead": "What nobody tells you about lost luggage.",
+      "photoPlaceholder": true,
+      "altText": "[PHOTO TBD] — a single suitcase on an empty airport carousel, editorial tone"
+    },
+    {
+      "index": 2,
+      "type": "scene",
+      "template": "personal-experience",
+      "sceneText": "I got to check-in calm. Bags checked, boarding was easy. I landed seven hours later — my bag didn't land with me.",
+      "photoPlaceholder": true,
+      "altText": "[PHOTO TBD] — arrivals, baggage claim area"
+    },
+    {
+      "index": 3,
+      "type": "tension",
+      "template": "personal-experience",
+      "sceneText": "The first reaction is panic. The second is the question nobody wants to ask: now what, for the next 48 hours, with none of what I packed?",
+      "photoPlaceholder": true,
+      "altText": "[PHOTO TBD] — detail shot of an airline service counter"
+    },
+    {
+      "index": 4,
+      "type": "common-mistake",
+      "template": "worth-it",
+      "subject": "The most common mistake when your bag doesn't show up",
+      "verdict": "common mistake",
+      "criteria": [
+        "Leaving the airport without filing a formal report",
+        "Not keeping the receipt and tracking number",
+        "Not asking about an essentials kit on the spot"
+      ],
+      "forWhom": "Anyone in a rush to leave the airport",
+      "notForWhom": "Anyone who understands the first 15 minutes shape everything that follows"
+    },
+    {
+      "index": 5,
+      "type": "turn",
+      "template": "personal-experience",
+      "sceneText": "The turn wasn't the bag showing up. It was realizing I'd packed the essentials in my carry-on — and that changed how I actually lived those two days.",
+      "photoPlaceholder": true,
+      "altText": "[PHOTO TBD] — open carry-on bag with essentials laid out"
+    },
+    {
+      "index": 6,
+      "type": "practical-action",
+      "template": "route",
+      "routeSteps": [
+        { "step": "1", "action": "File the irregularity report before leaving the baggage claim area" },
+        { "step": "2", "action": "Keep every receipt and the tracking number" },
+        { "step": "3", "action": "Ask directly about an emergency kit or reimbursement for essentials" },
+        { "step": "4", "action": "Confirm the official follow-up channel (app, phone, or airline email)" }
+      ],
+      "mapNote": null
+    },
+    {
+      "index": 7,
+      "type": "prevention",
+      "template": "alert-rule",
+      "alertTitle": "Before you board",
+      "ruleText": "Deadlines for filing a lost-luggage claim and reimbursement policy vary by airline and country. [VERIFY SOURCE AND DATE]",
+      "source": "[VERIFY SOURCE AND DATE]",
+      "dateChecked": "[VERIFY SOURCE AND DATE]"
+    },
+    {
+      "index": 8,
+      "type": "recap",
+      "template": "price-source",
+      "item": "Reimbursement for essentials in case of lost luggage",
+      "price": "[VERIFY SOURCE AND DATE]",
+      "currency": "[VERIFY SOURCE AND DATE]",
+      "source": "[VERIFY SOURCE AND DATE]",
+      "dateChecked": "[VERIFY SOURCE AND DATE]",
+      "note": "Every airline has its own policy — always confirm directly with the airline when it happens, not from someone else's story."
+    },
+    {
+      "index": 9,
+      "type": "cta",
+      "template": "cta",
+      "ctaText": "Has this happened to you? Tell us in the comments what saved the trip.",
+      "ctaAction": "comment"
+    }
+  ]
+}

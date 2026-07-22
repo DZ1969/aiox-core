@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "status": "DEMONSTRAÇÃO",
+    "note": "Campanha de exemplo criada apenas para validar o sistema de templates. Nenhuma política, prazo ou valor de companhia aérea real foi confirmado — todos os campos factuais usam o placeholder [VERIFICAR FONTE E DATA], conforme content/source-and-date-rules.md.",
+    "campaignId": "lost-luggage-demo",
+    "language": "pt",
+    "pillar": "vida-eua",
+    "visualFamily": "field-notes",
+    "campaignTitle": "A viagem bonita que dá errado antes mesmo do embarque",
+    "theme": "Bagagem extraviada como contexto educativo",
+    "credit": "Let's Go With Francis — Field Notes",
+    "dateChecked": "[VERIFICAR FONTE E DATA]",
+    "source": "[VERIFICAR FONTE E DATA]"
+  },
+  "slides": [
+    {
+      "index": 1,
+      "type": "hook",
+      "template": "carousel-cover",
+      "headline": "A viagem mais bonita da minha vida quase começou sem mala.",
+      "subhead": "O que ninguém te conta sobre bagagem extraviada.",
+      "photoPlaceholder": true,
+      "altText": "[FOTO A DEFINIR] — mala sozinha em esteira de aeroporto vazia, tom editorial"
+    },
+    {
+      "index": 2,
+      "type": "scene",
+      "template": "personal-experience",
+      "sceneText": "Cheguei no balcão de check-in tranquila. Malas despachadas, embarque sem drama. Pousei sete horas depois — e a mala não pousou comigo.",
+      "photoPlaceholder": true,
+      "altText": "[FOTO A DEFINIR] — desembarque, área de retirada de bagagem"
+    },
+    {
+      "index": 3,
+      "type": "tension",
+      "template": "personal-experience",
+      "sceneText": "A primeira reação é pânico. A segunda é a pergunta que ninguém quer fazer: e agora, o que eu faço nas próximas 48 horas sem nada do que planejei levar?",
+      "photoPlaceholder": true,
+      "altText": "[FOTO A DEFINIR] — detalhe de balcão de atendimento da companhia aérea"
+    },
+    {
+      "index": 4,
+      "type": "common-mistake",
+      "template": "worth-it",
+      "subject": "O erro mais comum quando a mala não chega",
+      "verdict": "erro comum",
+      "criteria": [
+        "Sair do aeroporto sem registrar a ocorrência formalmente",
+        "Não guardar o comprovante e o número de rastreamento",
+        "Não perguntar sobre kit de itens essenciais na hora"
+      ],
+      "forWhom": "Quem está com pressa para deixar o aeroporto",
+      "notForWhom": "Quem entende que os primeiros 15 minutos definem o resto do processo"
+    },
+    {
+      "index": 5,
+      "type": "turn",
+      "template": "personal-experience",
+      "sceneText": "A virada não foi a mala aparecer. Foi perceber que eu tinha levado o essencial comigo, na bagagem de mão — e isso mudou completamente como vivi aqueles dois dias.",
+      "photoPlaceholder": true,
+      "altText": "[FOTO A DEFINIR] — bagagem de mão aberta, itens essenciais organizados"
+    },
+    {
+      "index": 6,
+      "type": "practical-action",
+      "template": "route",
+      "routeSteps": [
+        { "step": "1", "action": "Registrar o relatório de irregularidade de bagagem antes de sair da área de retirada" },
+        { "step": "2", "action": "Guardar todos os comprovantes e o número de rastreamento" },
+        { "step": "3", "action": "Perguntar diretamente sobre kit de emergência ou reembolso de itens essenciais" },
+        { "step": "4", "action": "Confirmar o canal oficial de acompanhamento (app, telefone ou e-mail da companhia)" }
+      ],
+      "mapNote": null
+    },
+    {
+      "index": 7,
+      "type": "prevention",
+      "template": "alert-rule",
+      "alertTitle": "Antes de embarcar",
+      "ruleText": "Prazo para reclamar bagagem extraviada e política de reembolso variam por companhia aérea e por país. [VERIFICAR FONTE E DATA]",
+      "source": "[VERIFICAR FONTE E DATA]",
+      "dateChecked": "[VERIFICAR FONTE E DATA]"
+    },
+    {
+      "index": 8,
+      "type": "recap",
+      "template": "price-source",
+      "item": "Reembolso de itens essenciais em caso de bagagem extraviada",
+      "price": "[VERIFICAR FONTE E DATA]",
+      "currency": "[VERIFICAR FONTE E DATA]",
+      "source": "[VERIFICAR FONTE E DATA]",
+      "dateChecked": "[VERIFICAR FONTE E DATA]",
+      "note": "Cada companhia aérea tem política própria — sempre confirmar direto com a companhia no momento do ocorrido, não com base em relato de terceiros."
+    },
+    {
+      "index": 9,
+      "type": "cta",
+      "template": "cta",
+      "ctaText": "Já passou por isso? Conta nos comentários o que te salvou.",
+      "ctaAction": "comment"
+    }
+  ]
+}
