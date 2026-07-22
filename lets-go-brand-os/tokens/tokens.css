@@ -1,0 +1,95 @@
+/*
+  Let's Go With Francis — CSS Custom Properties
+  Gerado a partir de tokens.json. Se editar aqui, replique em tokens.json (e vice-versa).
+  V1 — substituir apenas quando ativos oficiais da marca justificarem.
+*/
+
+:root {
+  /* Color */
+  --color-travel-ink: #101417;
+  --color-warm-white: #FAF7F1;
+  --color-sand: #D8C7AE;
+  --color-heritage-gold: #B99155;
+  --color-ocean-teal: #1C6B70;
+  --color-action-green: #0B6B43;
+  --color-coral-alert: #C35A4A;
+
+  /* Typography */
+  --font-editorial: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', Arial, sans-serif;
+  --font-data: 'IBM Plex Mono', monospace;
+
+  --fw-editorial-regular: 400;
+  --fw-editorial-medium: 500;
+  --fw-editorial-semibold: 600;
+  --fw-body-regular: 400;
+  --fw-body-medium: 500;
+  --fw-body-bold: 700;
+  --fw-data-regular: 400;
+  --fw-data-medium: 500;
+
+  --fs-display: 64px;
+  --fs-h1: 48px;
+  --fs-h2: 36px;
+  --fs-h3: 28px;
+  --fs-body-lg: 24px;
+  --fs-body: 20px;
+  --fs-caption: 18px; /* mínimo absoluto */
+  --fs-cta: 22px;
+
+  --lh-tight: 1.05;
+  --lh-editorial: 1.15;
+  --lh-body: 1.45;
+  --lh-relaxed: 1.6;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --safe-margin-feed: 80px;
+  --safe-margin-story: 120px;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Shadow */
+  --shadow-card: 0 8px 24px 0 #10141733;
+
+  /* Scrim opacities (uso em gradients sobre foto) */
+  --scrim-light: 0.35;
+  --scrim-medium: 0.55;
+  --scrim-strong: 0.75;
+
+  /* Canvas dimensions (referência, não aplicável como px direto em todo contexto) */
+  --canvas-feed-portrait-w: 1080px;
+  --canvas-feed-portrait-h: 1350px;
+  --canvas-story-w: 1080px;
+  --canvas-story-h: 1920px;
+}
+
+/* Utilitário de scrim para garantir contraste de texto sobre foto — ver brand/05-photo-and-video-direction.md */
+.lgwf-scrim-bottom {
+  background: linear-gradient(
+    to top,
+    rgba(16, 20, 23, var(--scrim-strong)) 0%,
+    rgba(16, 20, 23, var(--scrim-medium)) 35%,
+    rgba(16, 20, 23, 0) 70%
+  );
+}
+
+.lgwf-scrim-top {
+  background: linear-gradient(
+    to bottom,
+    rgba(16, 20, 23, var(--scrim-medium)) 0%,
+    rgba(16, 20, 23, 0) 60%
+  );
+}
