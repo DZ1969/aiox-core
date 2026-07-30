@@ -7,10 +7,10 @@
 # - SHA256 hashes for change detection
 # - File types for categorization
 #
-version: 5.2.2
-generated_at: "2026-05-12T20:19:35.126Z"
+version: 5.2.5
+generated_at: "2026-07-30T00:16:36.815Z"
 generator: scripts/generate-install-manifest.js
-file_count: 1128
+file_count: 1129
 files:
   - path: cli/commands/config/index.js
     hash: sha256:25c4b9bf4e0241abf7754b55153f49f1a214f1fb5fe904a576675634cb7b3da9
@@ -1300,6 +1300,10 @@ files:
     hash: sha256:84acf809f112cb726710a9878904db6b9d5c0eb487a2e578de25ede0c2177c5e
     type: data
     size: 529247
+  - path: data/knowledge-base/produto-de-ativacao-e-funis-de-ascensao.md
+    hash: sha256:f54ea7042fa4971f2819cc9f96aac015d1a5e96ca629185b142f910ce683dc33
+    type: data
+    size: 20449
   - path: data/learned-patterns.yaml
     hash: sha256:24ac0b160615583a0ff783d3da8af80b7f94191575d6db2054ec8e10a3f945dc
     type: data
