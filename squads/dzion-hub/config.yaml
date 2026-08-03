@@ -1,0 +1,149 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Squad: Dzion Hub
+# Domain: Company OS — Governance, Context Engineering, Brand System (Phase 1)
+# Created: 2026-08-03
+# Version: 0.1.0
+# ═══════════════════════════════════════════════════════════════════════════════
+
+squad:
+  name: dzion-hub
+  display_name: "Dzion Hub — Company OS"
+  version: "0.1.0"
+  domain: "AI-First Company Operating System — Phase 1 foundation"
+  description: |
+    Núcleo mínimo do Dzion Hub Company OS: governança de contexto, prevenção
+    de invenção/duplicação, e o primeiro squad funcional (Branding). Construído
+    para acumular conhecimento entre sessões sem multiplicar erros, seguindo
+    divulgação progressiva de contexto (CLAUDE.md compacto + skills/tasks sob
+    demanda + context/ modular).
+
+  philosophy: |
+    "Profundidade útil não é biografia inventada — é arquitetura de pensamento,
+    critérios de decisão, limites, workflow, métricas e padrão de qualidade."
+    Nenhum agente aqui finge experiência humana, clientes ou resultados passados.
+    Competência é demonstrada pela qualidade do diagnóstico, das decisões, dos
+    arquivos gerados e das validações — não por currículo fictício.
+
+  keywords:
+    - company-os
+    - context-engineering
+    - brand-strategy
+    - governance
+    - no-invention
+    - dzion-hub
+
+  entry_agent: aiox-chief-architect
+  created_by: "aiox-company-os-phase-1"
+  created_at: "2026-08-03"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# TIER ARCHITECTURE
+# ─────────────────────────────────────────────────────────────────────────────
+
+tiers:
+  tier_0:
+    name: "Governance & Context Engineering"
+    agents:
+      - aiox-chief-architect
+    purpose: >
+      Governança do workspace, arquitetura de contexto, roteamento entre
+      squads futuros, prevenção de duplicação/invenção, aprovação estrutural
+      de novos agentes/skills, avaliação de ROI da complexidade.
+
+  tier_1:
+    name: "Branding Squad"
+    agents:
+      - brand-chief
+    purpose: >
+      Estratégia de marca: posicionamento, categoria, diferenciação, público,
+      transformação, crenças, arquétipos, personalidade, voz, sistema de
+      mensagens. NÃO escreve copy final nem produz design visual — apenas a
+      espinha dorsal estratégica que Copy e Design consomem depois.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# AGENT REGISTRY
+# ─────────────────────────────────────────────────────────────────────────────
+
+agents:
+  aiox-chief-architect:
+    file: agents/aiox-chief-architect.md
+    tier: 0
+    codename: "Axis"
+    icon: "🧭"
+    focus: "Governança, engenharia de contexto, anti-invenção, anti-duplicação, ROI de complexidade"
+
+  brand-chief:
+    file: agents/brand-chief.md
+    tier: 1
+    codename: "Norte"
+    icon: "🎯"
+    focus: "Posicionamento, diferenciação, arquétipos, voz, sistema de mensagens"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# HANDOFF MATRIX
+# ─────────────────────────────────────────────────────────────────────────────
+
+handoffs:
+  aiox-chief-architect:
+    routes_to: [brand-chief]
+    receives_from: []
+    escalates_to: "@aiox-master (framework-level conflicts only)"
+
+  brand-chief:
+    collaborates_with: []
+    escalates_to: [aiox-chief-architect]
+    handoff_out: >
+      Sistema de marca aprovado é insumo para (futuros, fora do escopo Fase 1)
+      Copy Squad, Design Squad. Brand Chief não cria esses squads nem executa
+      o trabalho deles.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SETTINGS
+# ─────────────────────────────────────────────────────────────────────────────
+
+settings:
+  activation:
+    prefix: "dzion-hub"
+    example: "@dzion-hub:aiox-chief-architect"
+
+  self_contained: true
+  # Per squad-chief design_rules: agents must not reference files outside
+  # squads/dzion-hub/. Tasks, checklists, context and decisions all live here.
+
+  no_invention_gate: true
+  # Constitution Article IV (No Invention), applied at squad scope: no file in
+  # this squad may assert founder/audience/brand facts without a source tag or
+  # an explicit [PENDENTE DE VALIDAÇÃO] marker.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# DEPENDENCIES (self-contained — all paths relative to this squad)
+# ─────────────────────────────────────────────────────────────────────────────
+
+dependencies:
+  tasks:
+    - create-context.md      # Context engineering workflow (11 steps)
+    - build-brand-system.md  # Brand system construction/review workflow
+  checklists:
+    - context-quality-gate.md
+    - brand-quality-gate.md
+  data:
+    - decisions/decision-log.md
+    - context/_index.md
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ROADMAP (explicitly out of scope for Phase 1 — do not build yet)
+# ─────────────────────────────────────────────────────────────────────────────
+
+roadmap_not_yet:
+  items:
+    - "Copy Squad"
+    - "Design Squad"
+    - "Growth Squad"
+    - "Sales Squad"
+    - "Finance Squad"
+    - "Risk Squad"
+    - "playbooks/ por canal/formato"
+  note: >
+    Phase 1 é deliberadamente o menor núcleo funcional. Novos squads só devem
+    ser criados quando houver um gatilho real de trabalho, nunca por
+    completude antecipada (ver aiox-chief-architect: anti_patterns).
